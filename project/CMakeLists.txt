@@ -31,7 +31,7 @@ set(CXXFLAGS )
 link_directories(./ ./lib/)
 
 # Property to add for assembler files
-set_source_files_properties(../../../../../components/toolchain/gcc/gcc_startup_nrf52.s PROPERTIES COMPILE_FLAGS "-x assembler-with-cpp")
+set_source_files_properties(gcc_startup.S PROPERTIES COMPILE_FLAGS "-x assembler-with-cpp")
 
 # Lib to link
 set(LIB_FILES any_lib.a m)
